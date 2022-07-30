@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;   
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* background-image: url('./marita-kavelashvili-ugnrXk1129g-unsplash.jpg'); */
+}
+.main_container{
+    width: 90%;
+    height: 250px;
+    backdrop-filter: blur(2px);
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: #08080898;
+    display: flex;
+    overflow: hidden;
+    color: #fff;
+}
+.main_info{
+    width: 30%;
+    height: 280px;
+}
+.searchbar{
+    width: 40%;
+    height: 280px;
+}
+.info_add{
+    width: 30%;
+    height: 280px;
+}
+.search_container{
+    width: 90%;
+    height: 45px;
+    background-color: #08080898;
+    border-radius: 30px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: gray;
+    color: #fff;
+}
+.fa-search{
+    text-indent: 10px;
+}
+#search_input{
+    flex: 1;
+    width: 95%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0px 10px;
+    font-size: 22px;
+    color: #fff;
+}
+.fa-times{
+    color: red;
+    cursor: pointer;
+}
+form{
+    width: 100%;
+}
+.main_location{
+    display: flex;
+    margin: 20px 0px 0px 20px;
+}
+.main_location > .fa-globe-europe{
+    font-size: 30px;
+    margin-top: 2px;
+}
+.main_location > h1{
+    font-size: 30px;
+    margin-left: 5px;
+}
+.general_location > p{
+    margin: 10px 0px 0px 20px;
+    font-size: 17px;
+}
+.main_temp{
+    display: flex;
+    margin: 20px 0px 0px 20px;
+}
+.main_temp > i{
+    font-size: 25px;
+    margin-top: 6px;
+}
+.main_temp > h1{
+    margin-left: 10px;
+}
+.main_calendar{
+    display: flex;
+    margin: 18px 0px 0px 20px ;
+    font-size: 22px;
+}
+.main_calendar > p{
+    margin-left: 10px;
+}
+.main_condition{
+    display: flex;
+}
+.main_condition > p {
+    margin-top: 17px;
+    margin-left: -7px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.DaysDiv{
+    width: 400px;
+    height: 340px;
+    background-color: #08080898;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px auto;
+}
+.days_weather{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DaysDiv > h1{
+    margin: 20px 0px 0px 20px;
+}
+.DaysDiv > p{
+    margin: 20px 0px 0px 20px;
+}
+
+.average_div{
+    width: 90%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(6,233,247,1) 27%, rgba(42,180,148,1) 53%, rgba(209,169,20,1) 70%, rgba(255,132,0,1) 100%);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+}
+
+.option_day{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.option{
+    width: 30%;
+    height: 70%;
+    background-color: #61606070;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    position: relative;
+}
+.additional_info{
+    width: 95%;
+    height: 60px;
+    background-color: #61606070;
+    border-radius: 10px;
+    margin-top: -40px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.option:nth-child(2){
+    background-image: url('./pressure.svg');
+}
+.option:last-child{
+    background-image: url('./pres.svg');
+}
+.pressure{
+    font-size: 18px;
+}
+
+.arrow{
+    width: 2px;
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+.arrow:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid #fff;
+    top: -13px;
+    left: -6px;
+}
+
+.arrow:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    bottom: -14px;
+    left: -7px;
+    border-radius: 50%;
+}
+.speed_metr{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffffcd;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #2b2b2b;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+.img{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-size: 20px;
+    margin-left: 55px;
+}
+.circle_diagram{
+    width: 90%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+.after_div{
+    z-index: 1;
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.circle_diagramm {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d1d1d15f;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.diagramm_filter {
+    width: 100%;
+    background: rgb(5,193,235);
+    background: linear-gradient(180deg, rgba(5,193,235,1) 0%, rgba(4,105,230,1) 100%);
+
+}
+
+.percent_show{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-color: #6d6d6d;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.humidity_perc{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.temp_n{
+    transform: scale(0);
+    transition: all .3s;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    pointer-events: none;
+}
+.circle:hover > .temp_n{
+    transform: scale(1);
+    transition: all .3s;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 310px;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+#container{
+    margin-top: 50px;
+    background-color: black;
+}
+
+@media screen and (max-width: 976px){
+    .days_weather{
+        width: 80%;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main_calendar > p{
+        font-size: 18px;
+    }
+}

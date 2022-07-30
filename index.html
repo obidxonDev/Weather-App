@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="main_info">
+            <div class="main_location">
+                <i class="fas fa-globe-europe"></i>
+                <h1></h1>
+            </div>
+
+            <div class="general_location">
+                <p></p>
+            </div>
+
+            <div class="main_temp" >
+                <i class="fas fa-temperature-high"></i>
+                <h1></h1>
+            </div>
+
+            <div class="main_calendar">
+                <i class="fas fa-calendar-alt"></i>
+                <p></p>
+            </div>
+
+            <div class="main_condition">
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="search_container">
+                <i class="fas fa-search"></i>
+                    <form><input autocomplete="off" autofocus type="text" placeholder="Search" id="search_input"></form>
+                <i class="fas fa-times" id="clear"></i>
+            </div>
+        </div>
+        <div class="info_add"></div>
+
+    </div>
+    <div class="days_weather"></div>
+    <div id="container"></div>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
