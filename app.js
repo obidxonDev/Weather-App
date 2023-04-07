@@ -70,7 +70,6 @@ function getData(data) {
         div.innerHTML = `
             <h1>${i.date}</h1>
 
-
             <p> Average temprature in this day </p>
             <div class="average_div">
                 <div class="circle" style="transform: translateX(${i.day.avgtemp_c}px)">
@@ -108,7 +107,7 @@ function getData(data) {
         dayDiv.appendChild(div)
     })
     if (data.current.condition.text === 'Clear') {
-        document.body.style.backgroundImage = "url(./clearmoon.jpg)"
+        document.body.style.backgroundImage = "url(./img/clearmoon.jpg)"
     }
     else if (data.current.condition.text === 'Partly cloudy') {
         document.body.style.backgroundImage = "url(./img/cloudy.jpg)"
